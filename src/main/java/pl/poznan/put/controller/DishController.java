@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pl.poznan.put.model.Dish;
-import pl.poznan.put.dao.DishRepository;
+import pl.poznan.put.entity.Dish;
+import pl.poznan.put.repository.DishRepository;
 
 import java.util.ArrayList;
 import java.util.List;

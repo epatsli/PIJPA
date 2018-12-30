@@ -1,4 +1,4 @@
-package pl.poznan.put.model;
+package pl.poznan.put.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,8 +15,8 @@ public class Dish {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id")
-	private Long id;
+	@Column(name = "ids")
+	private Long ids;
 
 	@Column(name = "name")
 	private String name;
@@ -48,12 +48,12 @@ public class Dish {
 		return new DishBuilder();
 	}
 
-	public Long getId() {
-		return id;
+	public Long getIds() {
+		return ids;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setIds(Long ids) {
+		this.ids = ids;
 	}
 
 	public String getName() {
@@ -97,7 +97,7 @@ public class Dish {
 	}
 
 	public static class DishBuilder {
-		private Long id;
+		private Long ids;
 		private String name;
 		private double price;
 		private String type;
@@ -107,8 +107,8 @@ public class Dish {
 		public DishBuilder() {
 		}
 
-		public DishBuilder withId(Long id) {
-			this.id = id;
+		public DishBuilder withIds(Long ids) {
+			this.ids = ids;
 			return this;
 		}
 

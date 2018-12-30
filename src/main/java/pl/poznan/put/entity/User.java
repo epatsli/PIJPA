@@ -1,4 +1,4 @@
-package pl.poznan.put.model;
+package pl.poznan.put.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

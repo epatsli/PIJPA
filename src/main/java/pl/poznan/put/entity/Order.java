@@ -1,4 +1,4 @@
-package pl.poznan.put.model;
+package pl.poznan.put.entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class Order {
 	@Column(name = "id")
 	private Long id;
 	
-	@OneToMany(mappedBy = "id")
+	@OneToMany(mappedBy = "ids")
 	@Column(name = "dishIds")
 	private List<Dish> dishIds = new ArrayList<>();
 	
